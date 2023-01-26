@@ -1,10 +1,7 @@
-import React, { useState } from "react";
-import Modal from "./Modal";
+import { useState } from "react";
 import "./App.css";
-
-function Child() {
-  return <button>Click</button>;
-}
+import Modal from "./components/Modal";
+import Child from "./components/Child";
 
 function App() {
   const [isOpened, setOpened] = useState(false);
@@ -13,6 +10,7 @@ function App() {
   const openModal = () => setOpened(true);
   const closeModal = () => setOpened(false);
   const handleClick = () => setCounter(counter + 1);
+
   return (
     <div className="App" onClick={handleClick}>
       <header className="App-header">
