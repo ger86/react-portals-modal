@@ -1,3 +1,3 @@
 export default function Child() {
-  return <button>Click</button>;
+  return <button>Click here</button>;
 }
